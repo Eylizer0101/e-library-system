@@ -1,0 +1,4 @@
+.App { min-height:100vh; background:#FFFFFF; }
+.MuiCard-root { transition:box-shadow .18s ease, transform .18s ease; }
+.MuiCard-root:hover { box-shadow:0 12px 34px rgba(0,0,0,.11); }
+.MuiTableContainer-root { border-radius:14px; }

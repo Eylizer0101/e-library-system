@@ -1,0 +1,39 @@
+/* E-Library responsive QA foundation; preserves current blue/white palette. */
+html { -webkit-text-size-adjust: 100%; scroll-padding-top: 78px; }
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root, .App { width: 100%; min-width: 0; max-width: 100%; }
+body { overflow-x: clip; }
+img, video, canvas { max-width: 100%; }
+img, video { height: auto; }
+.MuiBox-root, .MuiStack-root, .MuiGrid-root, .MuiGrid-item, .MuiContainer-root { min-width: 0; }
+.MuiTypography-root { overflow-wrap: break-word; }
+.MuiCard-root, .MuiPaper-root { max-width: 100%; }
+.MuiTableContainer-root { max-width: 100%; overflow-x: auto !important; overscroll-behavior-x: contain; }
+.MuiTable-root { min-width: 620px; }
+.MuiTablePagination-toolbar { flex-wrap: wrap; gap: 6px; justify-content: flex-end; }
+.MuiTablePagination-spacer { display: none; }
+.MuiDialog-paper { max-width: calc(100vw - 24px) !important; max-height: calc(100dvh - 24px) !important; margin: 12px !important; }
+.MuiDialogContent-root { overflow-wrap: anywhere; }
+.MuiSnackbar-root { max-width: calc(100vw - 24px); }
+.MuiFormControl-root, .MuiTextField-root { min-width: 0; }
+.MuiButton-root { max-width: 100%; }
+.MuiCardMedia-root { max-width: 100%; }
+.MuiDrawer-paper { max-width: 100vw; }
+@media (max-width: 899.98px) {
+  .MuiContainer-root { padding-left: 16px !important; padding-right: 16px !important; }
+  .MuiTablePagination-toolbar { justify-content: center; padding: 8px; }
+  .MuiTablePagination-selectLabel, .MuiTablePagination-displayedRows { margin: 0; }
+  .MuiDialogActions-root { flex-wrap: wrap; }
+  .MuiSnackbar-root { left: 12px; right: 12px; width: auto; }
+}
+@media (max-width: 599.98px) {
+  .MuiTypography-h2 { font-size: clamp(1.75rem, 7vw, 2.5rem); line-height: 1.16; }
+  .MuiTypography-h3 { font-size: clamp(1.55rem, 6vw, 2.2rem); line-height: 1.2; }
+  .MuiTypography-h4 { font-size: clamp(1.4rem, 5.5vw, 1.85rem); line-height: 1.25; }
+  .MuiTypography-h5 { font-size: clamp(1.15rem, 4.7vw, 1.5rem); }
+  .MuiButton-root { min-height: 42px; }
+  .MuiGrid-container { margin-left: 0; max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
