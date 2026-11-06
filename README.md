@@ -4,7 +4,13 @@
 
 ### A web-based platform for managing library books, borrowing requests, and student access
 
-**Built with React, Material UI, Node.js, Express.js, and MongoDB**
+**A full-stack library platform for students and administrators.**
+
+![Stack](https://img.shields.io/badge/Stack-MERN-2e66a6?style=flat-square)
+![React](https://img.shields.io/badge/Frontend-React-149eca?style=flat-square)
+![Material UI](https://img.shields.io/badge/UI-Material%20UI-007FFF?style=flat-square)
+![Node.js](https://img.shields.io/badge/Backend-Node.js-339933?style=flat-square)
+![MongoDB](https://img.shields.io/badge/Database-MongoDB-47A248?style=flat-square)
 
 [Overview](#overview) · [Features](#features) · [Tech Stack](#tech-stack) · [Installation](#getting-started) · [API](#api-overview) · [Developer](#developer)
 
