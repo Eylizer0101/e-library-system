@@ -1,24 +1,18 @@
 <div align="center">
 
-# 📚 E-Library Management System
+# E-Library Management System
 
 ### A web-based platform for managing library books, borrowing requests, and student access
 
 **Built with React, Material UI, Node.js, Express.js, and MongoDB**
 
-[![React](https://img.shields.io/badge/React-19-149ECA?logo=react&logoColor=white)](https://react.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express.js-4.x-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![Material UI](https://img.shields.io/badge/Material_UI-7-007FFF?logo=mui&logoColor=white)](https://mui.com/)
-
-[Overview](#-overview) • [Features](#-features) • [Tech Stack](#-tech-stack) • [Installation](#-getting-started) • [API](#-api-overview) • [Developer](#-developer)
+[Overview](#overview) · [Features](#features) · [Tech Stack](#tech-stack) · [Installation](#getting-started) · [API](#api-overview) · [Developer](#developer)
 
 </div>
 
 ---
 
-## 📖 Overview
+## Overview
 
 The **E-Library Management System** is a full-stack web application designed to help students discover books, submit borrowing requests, and track their library activity while providing administrators with tools to manage the book catalog, borrowing requests, and library records.
 
@@ -31,9 +25,9 @@ The application separates **Student** and **Administrator** workflows and connec
 - Help administrators organize book details, available copies, and borrowing activity.
 - Provide a responsive interface across desktop and smaller screens.
 
-## ✨ Features
+## Features
 
-### 👨‍🎓 Student
+### Student
 
 - **Account registration and login** using student information and email/password credentials.
 - **Book catalog** with search, category filtering, and pagination support.
@@ -43,7 +37,7 @@ The application separates **Student** and **Administrator** workflows and connec
 - **Return workflow** for approved borrowed books.
 - **Profile and account-related pages** for student information.
 
-### 🛠️ Administrator
+### Administrator
 
 - **Book management:** create, view, update, and delete catalog entries.
 - **Book cover uploads:** attach an image to a book record.
@@ -54,7 +48,7 @@ The application separates **Student** and **Administrator** workflows and connec
 
 > Feature availability in the interface may vary by the current frontend implementation. The core catalog, borrowing, authentication, and admin routes are present in the repository.
 
-## 🔄 How It Works
+## How It Works
 
 1. A student registers or signs in to an existing account.
 2. The student explores the catalog and filters or searches for a book.
@@ -65,7 +59,7 @@ The application separates **Student** and **Administrator** workflows and connec
 
 **Borrowing safeguards:** the backend checks available copies and prevents a student from submitting another active request for the same book.
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technologies |
 | --- | --- |
@@ -79,7 +73,7 @@ The application separates **Student** and **Administrator** workflows and connec
 | Configuration | dotenv, CORS |
 | Development tools | Git, GitHub, npm, Nodemon |
 
-## 🗂️ Repository Structure
+## Repository Structure
 
 ```text
 e-library-system/
@@ -97,12 +91,13 @@ e-library-system/
 │   ├── .env.example        # Frontend environment template
 │   └── package.json
 ├── .gitignore
-└── README-UPDATED.md      # Earlier UI-change notes
+├── README-UPDATED.md      # Earlier UI-change notes
+└── README.md              # Main project documentation
 ```
 
 *The tree highlights major components rather than listing every source file.*
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -188,7 +183,7 @@ http://localhost:5000/api/test
 
 A working API should respond with a JSON message indicating that the API is working. Then test student registration, login, catalog browsing, and the borrowing workflow with test data.
 
-## 🔌 API Overview
+## API Overview
 
 The Express application mounts these route groups:
 
@@ -219,7 +214,7 @@ DELETE /api/admin/books/:id
 
 Protected endpoints require the appropriate authentication or administrator permissions. See the route files in `backend/routes/` for exact request fields and responses.
 
-## 🔒 Authentication and Security
+## Authentication and Security
 
 The current codebase includes:
 
@@ -241,7 +236,7 @@ The current codebase includes:
 
 > The existing project notes indicate the forgot-password interface does not yet have a complete supporting backend reset flow. Do not present password reset as production-ready until implemented and tested.
 
-## 🧪 Testing and Validation
+## Testing and Validation
 
 Recommended manual tests:
 
@@ -258,7 +253,7 @@ Recommended manual tests:
 
 The repository was reviewed for documentation purposes; this README does **not** claim that automated or end-to-end tests have passed.
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Issue | What to check |
 | --- | --- |
@@ -269,7 +264,7 @@ The repository was reviewed for documentation purposes; this README does **not**
 | A borrow request fails | Check copies available, duplicate pending/approved requests, and logged-in session. |
 | Port already in use | Change the backend `PORT` or stop the conflicting process. |
 
-## ☁️ Deployment Notes
+## Deployment Notes
 
 The React frontend and Express backend can be deployed separately. Configure the frontend API URL to point to the deployed backend's `/api` endpoint and set `FRONTEND_URL` on the backend to the deployed frontend origin.
 
@@ -277,7 +272,7 @@ For production, provide a reachable MongoDB instance, use HTTPS, and arrange per
 
 No verified live production URL is included in this README.
 
-## 👨‍💻 Developer
+## Developer
 
 **Eylizer De Afria**  
 Bachelor of Science in Information Technology, major in System Development  
@@ -287,9 +282,15 @@ PHINMA Araullo University
 - **GitHub:** https://github.com/Eylizer0101
 - **LinkedIn:** https://www.linkedin.com/in/eylizer-de-afria-040724430
 
-## 📄 License
+## License
 
-The repository does not currently provide a root-level `LICENSE` file. **Do not assume that the source code is licensed for reuse or redistribution** without permission from the copyright holder. The backend `package.json` declares `ISC`, which is package metadata and is not a substitute for a clear repository-wide license statement.
+© 2026 Eylizer De Afria. All Rights Reserved.
+
+This project is provided publicly for educational, portfolio, viewing, and evaluation purposes only. **No permission is granted to copy, modify, redistribute, sublicense, or use the project commercially** without prior written permission from the relevant copyright holder(s).
+
+Public availability on GitHub does not make the project open source. Any license field in a `package.json` file should not be interpreted as a repository-wide permission grant. Third-party libraries, assets, and contributions remain subject to their own licenses and ownership rights.
+
+For permission inquiries, contact the repository owner through GitHub.
 
 ---
 
